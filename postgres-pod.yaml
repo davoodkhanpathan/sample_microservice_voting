@@ -11,4 +11,10 @@ spec:
     image: postgres:9.4
     ports:
     - containerPort: 5432
+    resources:
+      requests:
+        ephemeral-storage: "500Mi"
+      limits:
+        ephemeral-storage: "1Gi"
+        
       
